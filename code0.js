@@ -68,7 +68,7 @@ gdjs.copyArray(runtimeScene.getObjects("popUpFullScreen"), gdjs.startSceneCode.G
     gdjs.startSceneCode.GDNewButtonObjects1[i].hide(false);
 }
 }{for(var i = 0, len = gdjs.startSceneCode.GDpopUpFullScreenObjects1.length ;i < len;++i) {
-    gdjs.startSceneCode.GDpopUpFullScreenObjects1[i].setPosition(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2,gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) / 2);
+    gdjs.startSceneCode.GDpopUpFullScreenObjects1[i].setPosition(gdjs.evtTools.camera.getCameraX(runtimeScene, "", 0),gdjs.evtTools.camera.getCameraY(runtimeScene, "", 0));
 }
 }{for(var i = 0, len = gdjs.startSceneCode.GDNewButtonObjects1.length ;i < len;++i) {
     gdjs.startSceneCode.GDNewButtonObjects1[i].setPosition((( gdjs.startSceneCode.GDpopUpFullScreenObjects1.length === 0 ) ? 0 :gdjs.startSceneCode.GDpopUpFullScreenObjects1[0].getCenterXInScene()) - 45,(( gdjs.startSceneCode.GDpopUpFullScreenObjects1.length === 0 ) ? 0 :gdjs.startSceneCode.GDpopUpFullScreenObjects1[0].getCenterYInScene()) + 15);
