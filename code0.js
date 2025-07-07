@@ -10,6 +10,8 @@ gdjs.startSceneCode.GDNewButtonObjects1= [];
 gdjs.startSceneCode.GDNewButtonObjects2= [];
 gdjs.startSceneCode.GDpopUpFullScreenObjects1= [];
 gdjs.startSceneCode.GDpopUpFullScreenObjects2= [];
+gdjs.startSceneCode.GDNewSpriteObjects1= [];
+gdjs.startSceneCode.GDNewSpriteObjects2= [];
 
 
 gdjs.startSceneCode.eventsList0 = function(runtimeScene) {
@@ -184,6 +186,8 @@ gdjs.startSceneCode.GDNewButtonObjects1.length = 0;
 gdjs.startSceneCode.GDNewButtonObjects2.length = 0;
 gdjs.startSceneCode.GDpopUpFullScreenObjects1.length = 0;
 gdjs.startSceneCode.GDpopUpFullScreenObjects2.length = 0;
+gdjs.startSceneCode.GDNewSpriteObjects1.length = 0;
+gdjs.startSceneCode.GDNewSpriteObjects2.length = 0;
 
 gdjs.startSceneCode.eventsList0(runtimeScene);
 gdjs.startSceneCode.GDBackground01Objects1.length = 0;
@@ -196,6 +200,8 @@ gdjs.startSceneCode.GDNewButtonObjects1.length = 0;
 gdjs.startSceneCode.GDNewButtonObjects2.length = 0;
 gdjs.startSceneCode.GDpopUpFullScreenObjects1.length = 0;
 gdjs.startSceneCode.GDpopUpFullScreenObjects2.length = 0;
+gdjs.startSceneCode.GDNewSpriteObjects1.length = 0;
+gdjs.startSceneCode.GDNewSpriteObjects2.length = 0;
 
 
 return;
