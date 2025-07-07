@@ -21,6 +21,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Background01"), gdjs.startSceneCode.GDBackground01Objects1);
 gdjs.copyArray(runtimeScene.getObjects("NewButton"), gdjs.startSceneCode.GDNewButtonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("fullScreenToggel"), gdjs.startSceneCode.GDfullScreenToggelObjects1);
 gdjs.copyArray(runtimeScene.getObjects("popUpFullScreen"), gdjs.startSceneCode.GDpopUpFullScreenObjects1);
@@ -34,6 +35,7 @@ gdjs.copyArray(runtimeScene.getObjects("popUpFullScreen"), gdjs.startSceneCode.G
 }{for(var i = 0, len = gdjs.startSceneCode.GDfullScreenToggelObjects1.length ;i < len;++i) {
     gdjs.startSceneCode.GDfullScreenToggelObjects1[i].hide();
 }
+}{gdjs.evtTools.camera.centerCamera(runtimeScene, (gdjs.startSceneCode.GDBackground01Objects1.length !== 0 ? gdjs.startSceneCode.GDBackground01Objects1[0] : null), true, "", 0);
 }}
 
 }
@@ -163,9 +165,6 @@ if (isConditionTrue_0) {
 {
 
 
-let isConditionTrue_0 = false;
-{
-}
 
 }
 
