@@ -25,6 +25,7 @@ isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Background01"), gdjs.startSceneCode.GDBackground01Objects1);
 gdjs.copyArray(runtimeScene.getObjects("NewButton"), gdjs.startSceneCode.GDNewButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.startSceneCode.GDNewSpriteObjects1);
 gdjs.copyArray(runtimeScene.getObjects("fullScreenToggel"), gdjs.startSceneCode.GDfullScreenToggelObjects1);
 gdjs.copyArray(runtimeScene.getObjects("popUpFullScreen"), gdjs.startSceneCode.GDpopUpFullScreenObjects1);
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "popup_delay");
@@ -38,6 +39,9 @@ gdjs.copyArray(runtimeScene.getObjects("popUpFullScreen"), gdjs.startSceneCode.G
     gdjs.startSceneCode.GDfullScreenToggelObjects1[i].hide();
 }
 }{gdjs.evtTools.camera.centerCamera(runtimeScene, (gdjs.startSceneCode.GDBackground01Objects1.length !== 0 ? gdjs.startSceneCode.GDBackground01Objects1[0] : null), true, "", 0);
+}{for(var i = 0, len = gdjs.startSceneCode.GDNewSpriteObjects1.length ;i < len;++i) {
+    gdjs.startSceneCode.GDNewSpriteObjects1[i].setCenterPositionInScene(gdjs.evtTools.camera.getCameraX(runtimeScene, "", 0),gdjs.evtTools.camera.getCameraY(runtimeScene, "", 0));
+}
 }}
 
 }
