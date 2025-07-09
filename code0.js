@@ -52,7 +52,7 @@ gdjs.copyArray(runtimeScene.getObjects("popUpFullScreen"), gdjs.startSceneCode.G
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "popup_delay") >= 2;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "popup_delay") >= 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 {isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 0);
@@ -171,6 +171,27 @@ if (isConditionTrue_0) {
 {
 
 
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isScrollingDown(runtimeScene);
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(0).sub(0.1);
+}{gdjs.evtTools.camera.setCameraZoom(runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber(), "", 0);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isScrollingUp(runtimeScene);
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(0).add(0.1);
+}{gdjs.evtTools.camera.setCameraZoom(runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber(), "", 0);
+}}
 
 }
 
